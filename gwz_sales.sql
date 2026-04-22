@@ -2,8 +2,8 @@
 SELECT
     date_date
     ,products_id
-    ,purchase_cost * qty AS purchase_cost
-    ,SUM(turnover) AS daily_turnover
+    ,ROUND(SUM(purchase_cost * qty),2) AS purchase_cost
+    ,ROUND(SUM(turnover),2) AS daily_turnover
 FROM
     `event-test-487817.course14.gwz_sales`
 GROUP BY
