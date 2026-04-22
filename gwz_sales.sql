@@ -9,4 +9,4 @@ FROM
 GROUP BY
     date_date
     ,products_id
-ORDER BY date_date
+ORDER BY date_date DESC
